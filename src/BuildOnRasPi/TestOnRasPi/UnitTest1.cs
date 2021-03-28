@@ -27,7 +27,7 @@ namespace TestOnRasPi
         public void DoubleFail()
         {
             // arrange
-            var input = 4;
+            var input = 615619;
 
             // act
             var doubledInput = Double(input);
