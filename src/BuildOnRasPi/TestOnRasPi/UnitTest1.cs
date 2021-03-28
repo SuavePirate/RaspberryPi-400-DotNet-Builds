@@ -11,7 +11,7 @@ namespace TestOnRasPi
         }
 
         [Fact]
-        public void Test1()
+        public void DoublePass()
         {
             // arrange
             var input = 4;
@@ -21,6 +21,19 @@ namespace TestOnRasPi
 
             // assert
             Assert.Equal(8, doubledInput);
+        }
+
+        [Fact]
+        public void DoubleFail()
+        {
+            // arrange
+            var input = 4;
+
+            // act
+            var doubledInput = Double(input);
+
+            // assert
+            Assert.Equal(1231238, doubledInput);
         }
     }
 }
